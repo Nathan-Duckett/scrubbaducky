@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Scrubba Ducky Cleaning</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="Scrubba Ducky professional cleaners based in Wellington, New Zealand. Providing a reliable, regular cleaning service." />
-
+    <meta name="description" content="Scrubba Ducky professional cleaners based in Wellington, New Zealand. Providing a reliable, regular cleaning service." />
+    <link rel="icon" type="image/x-icon" href="/images/rubber-duck.png">
     <!-- Include bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <script defer data-domain="scrubbaducky.co.nz" src="https://plausible.nduckett.com/js/plausible.js"></script>
 </head>
@@ -21,33 +19,32 @@
         <header class="py-5">
             <div class="row">
                 <div class="col-xs-12 d-block d-sm-none">
-                    <img src="images/rubber-duck.png" class="d-block mx-auto mb-4" width="64" height="64" />
+                    <img src="images/ducky-logo.png" class="d-block mx-auto mb-4" width="64" height="64" alt="Scrubba Ducky Logo" />
                 </div>
                 <div class="text-center col-xs-12 col-sm-6 col-md-7 align-items-center d-flex">
                     <div class="d-block">
                         <h2 class="display-2">Scrubba Ducky Cleaners</h2>
-                        <p class="lead">Reliable, regular house cleaning service. Call us now to book in your next
-                            clean.</p>
+                        <p class="lead">Reliable, regular house cleaning service. Call us now to book in your next clean.
+                        </p>
                         <a class="btn btn-primary heroButton" href="tel:+64273398819">Get in touch</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 d-none d-sm-block">
-                    <img src="images/rubber-duck.png" class="img-fluid float-end" />
+                    <img src="images/ducky-logo.png" class="img-fluid float-end" alt="Scrubba Ducky Logo" />
                 </div>
             </div>
         </header>
         <main>
-            <div class="row py-5 text-center lead">
+            <div class="row py-5 text-center lead" id="about">
                 <h4 class="text-center display-4">Who are we?</h4>
                 <p>
                     Scrubba Ducky is a professional cleaning company led by Kathryn Duckett based in Wellington, New Zealand.
                 </p>
                 <p>
-                    Kathryn has had previous property management experience and extensive cleaning experience. With her help you'll be
-                    certain to pass your final inspection or keep your house in a clean state.
+                    Kathryn has had previous property management experience and extensive cleaning experience. With her help you'll be certain to pass your final inspection or keep your house in a clean state.
                 </p>
             </div>
-            <h4 class="display-4 text-center mt-2 mb-1">Prices</h4>
+            <h4 class="display-4 text-center mt-2 mb-1" id="prices">Prices</h4>
             <div class="row row-cols-1 row-cols-md-2 mb-1 mt-2 text-center">
                 <div class="col d-block">
                     <div class="card mb-4 rounded-3 shadow-sm">
@@ -58,8 +55,9 @@
                             <h1 class="card-title pricing-card-title">$55<small class="text-muted fw-light">/hr</small>
                             </h1>
                             <p class="lead">Receive sparkle or full cleans as often as you require.</p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Call to book a spot
-                                now</button>
+                            <a type="button" class="w-100 btn btn-lg btn-outline-primary" href="tel:+64273398819">
+                                Call to book a spot now
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -73,25 +71,61 @@
                             </h1>
                             <p class="lead">Moving in or out of your house/apartment?</p>
                             <p class="lead">Let us work our magic to clean up your place.</p>
-                            <button type="button" class="w-100 btn btn-lg btn-primary">Call us to book a
-                                quote</button>
+                            <a type="button" class="w-100 btn btn-lg btn-primary" href="tel:+64273398819">
+                                Call us to book a quote
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="text-center mb-3">Please note: Cleaning appliances (e.g. Ovens, Fridges etc.) will cost extra on top of the hourly charge.</p>
+            <p class="text-center mb-3">
+                Please note: Cleaning appliances (e.g. Ovens, Fridges etc.) will cost extra on top of the hourly charge.
+            </p>
+            <div class="py-4" id="gifting">
+                <h4 class="text-center display-4">Gifting</h4>
+                <p class="lead text-center">
+                    Is your loved one looking to get a clean?<br/> Are you wanting to help a client with some cleaning costs?
+                </p>
+                <p class="lead text-center">
+                    We offer vouchers which you can prepay for any kind of clean. Let us know and we can get a voucher prepared for you.
+                </p>
+            </div>
         </main>
 
-        <footer>
-            <h4 class="display-4 text-center">Contact Us</h4>
-
+        <footer id="contact-form-box" class="p-3 d-block mx-auto mb-5 mt-3">
+            <h4 class="display-4 text-center" id="contact">Contact Us</h4>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <p class="lead p-3">
+                        You can call us on <a href="tel:+64273398819">027-339-8819</a>, email us at <a href="mailto:kathryn@scrubbaducky.co.nz">kathryn@scrubbaducky.co.nz</a> or leave an enquiry here and we will try to contact you as soon as possible.
+                    </p>
+                </div>
+                <div class=" col-md-6 col-sm-12 col-xs-12">
+                    <form id="contact_form" action="https://formspree.io/f/myyoddvq" method="post">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="contact_name" name="name" placeholder="First Last" required>
+                            <label for="contact_name" class="form-label">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="contact_email" name="email" placeholder="name@example.com" required>
+                            <label for="contact_email" class="form-label">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a message here" id="contact_message" style="height: 150px" name="message"></textarea>
+                            <label for="contact_message">Message</label>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <input type="submit" class="btn btn-success" value="Send Enquiry">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </footer>
     </div>
 
     <!-- Include Bootstrap JS files -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
