@@ -1,0 +1,20 @@
+version: "3.3"
+services:
+  scrubba-ducky-web:
+    image: nginx:latest
+    volumes:
+      - ./:/usr/share/nginx/html # Mounting full site into container
+    networks:
+      - traefik_proxy
+    restart: unless-stopped
+    labels:
+      - traefik.http.routers.sdw.rule=Host(`sdw.dev.${URL}`)
+      - traefik.http.routers.sdw.entrypoints=https
+      - traefik.http.routers.sdw.tls=true
+      - traefik.http.routers.sdw.tls.certresolver=letsencrypt
+      - traefik.http.services.sdw.loadbalancer.server.port=80
+
+networks:
+  traefik_proxy: # Existing traefik network on the server
+    external:
+      name: traefik_proxy
